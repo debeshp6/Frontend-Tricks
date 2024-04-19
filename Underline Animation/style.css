@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=DM+Sans:ital,opsz,wght@0,9..40,1000;1,9..40,1000&family=Dosis:wght@500&family=Lexend+Deca:wght@100..900&family=Madimi+One&family=Sedgwick+Ave&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bungee", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    padding: 10px;
+}
+
+h1 {
+    position: relative;
+    font-weight: 900;
+    text-align: center;
+    color: brown;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    left : 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color: brown;
+    transition: all ease 1s;
+}
+
+h1:hover::after {
+    width: 100%;
+}
